@@ -2,10 +2,11 @@
   "name": "fitness-tracker-api",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js",
+  "main": "api/index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "node index.js"
+    "dev": "node index.js",
+    "vercel-build": "echo 'Build completed'"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.39.0",
@@ -13,8 +14,7 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^4.21.0",
-    "jsonwebtoken": "^9.0.2",
-    "uuid": "^11.1.0"
+    "jsonwebtoken": "^9.0.2"
   },
   "engines": {
     "node": ">=18.0.0"
