@@ -3,3 +3,5 @@ fitness.db
 fitness.db-wal
 fitness.db-shm
 .env
+.vercel
+.env*.local

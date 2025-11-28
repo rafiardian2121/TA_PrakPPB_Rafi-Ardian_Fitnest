@@ -1,11 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 import bcrypt from 'bcryptjs';
-import dotenv from 'dotenv';
 
-// Load environment variables
-dotenv.config();
-
-// Supabase configuration
+// Supabase configuration - Vercel injects env vars directly
 const supabaseUrl = process.env.SUPABASE_URL || 'https://kbkkdrmckofzjenbrhwp.supabase.co';
 const supabaseKey = process.env.SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imtia2tkcm1ja29memplbmJyaHdwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQzMTIxNjcsImV4cCI6MjA3OTg4ODE2N30.rnpv258b4eNw1hKZgIw8bgLNJRBrNG2LfP6_P2uGhs4';
 

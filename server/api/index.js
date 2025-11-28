@@ -1,7 +1,6 @@
 import express from 'express';
 import cors from 'cors';
 import jwt from 'jsonwebtoken';
-import dotenv from 'dotenv';
 import {
   getAllWorkouts,
   getWorkoutById,
@@ -17,9 +16,6 @@ import {
   verifyPassword,
   updateUser
 } from '../database.js';
-
-// Load environment variables
-dotenv.config();
 
 const app = express();
 const JWT_SECRET = process.env.JWT_SECRET || 'fitness-tracker-secret-key-2025';
